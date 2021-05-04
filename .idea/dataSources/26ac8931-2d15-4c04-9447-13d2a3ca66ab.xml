@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@localhost">
+  <database-model serializer="dbm" dbms="MONGO" family-id="MONGO" format-version="4.19">
+    <root id="1">
+      <ServerVersion>4.4.3</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="admin"/>
+    <schema id="3" parent="1" name="aidhub"/>
+    <schema id="4" parent="1" name="bsv2"/>
+    <schema id="5" parent="1" name="buku_db"/>
+    <schema id="6" parent="1" name="company"/>
+    <schema id="7" parent="1" name="config"/>
+    <schema id="8" parent="1" name="custom"/>
+    <schema id="9" parent="1" name="dota"/>
+    <schema id="10" parent="1" name="flags"/>
+    <schema id="11" parent="1" name="laravelfirst"/>
+    <schema id="12" parent="1" name="local"/>
+    <schema id="13" parent="1" name="mirai"/>
+    <schema id="14" parent="1" name="miraisnip"/>
+    <schema id="15" parent="1" name="nodekb"/>
+    <table id="16" parent="3" name="migrations"/>
+    <table id="17" parent="3" name="users"/>
+    <column id="18" parent="16" name="_id">
+      <DataType>ObjectId(0)|12s</DataType>
+    </column>
+    <column id="19" parent="16" name="batch">
+      <Position>1</Position>
+      <DataType>Integer|4s</DataType>
+    </column>
+    <column id="20" parent="16" name="migration">
+      <Position>2</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+  </database-model>
+</dataSource>
